@@ -1,0 +1,88 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #0066cc;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 25px !important;
+}
+
+.navbar-nav  li a{
+ color: white !important;
+}
+
+.navbar-nav  li a:hover {
+    /* Over writes any other modifications */
+    color: black !important;
+}
+
+#showcase h3{
+    display: inline-block;
+    font-family:fantasy !important;
+
+}
+#information .info{
+    padding:5px;
+    border: solid white  10px;
+    background-color: rgb(217, 251, 255);
+    width: 50%;
+    float: left;
+}
+
+#build .buildup{
+    width: 50%;
+    float: left;
+    border: solid white  10px;
+}
+
+.panel-heading{
+    background-color: #0066cc !important;
+    color: white !important;
+}
+
+footer{
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+    .navbar {
+        background-color: #0066cc;
+    }
+    #showcase h3{
+        display: inline-block;
+    }
+    #information .info{
+        padding:5px;
+        border: solid white  10px;
+        background-color: rgb(217, 251, 255);
+        width: 100%;
+    }
+    
+    #build .buildup{
+        width: 100%;
+        border: solid white  10px;
+    }
+    
+    .panel-heading{
+        background-color:#0066cc !important;
+        color: white !important;
+    }
+    
+    footer{
+        background-color: #0066cc;
+        color: white;
+        text-align: center;
+        height: 40px;
+    }
+}

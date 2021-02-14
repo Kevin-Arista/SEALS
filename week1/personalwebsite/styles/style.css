@@ -1,0 +1,71 @@
+body{
+    /*by default the body has padding; no white padding around anymore*/
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Global*/
+.container{
+    width: 90%;
+    margin: auto;
+    /*This prevents scrll bars from appearing*/
+    overflow: hidden;
+}
+
+header{
+    background: darkslategray;
+    color: white;
+    text-align: center;
+}
+
+#showcase{
+    min-height: 400px;
+    /*A relative URL is the URL of a local file that is foun on your computer*/
+    background: url('../assets/tools.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#showcase h3{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    color:coral;
+}
+
+#information .info{
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+}
+
+#reflection .reflect{
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+}
+
+footer{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+}
+
+/*media queries*/
+@media only screen and (orientation: portrait) {
+    header {
+        background-color: coral;
+    }
+    #showcase h3{
+        color: darkslategray;
+    }
+    #information .info {
+        float: none;
+    }
+    #reflection .reflect {
+        float: none; 
+    }
+    footer{
+        background-color: coral;
+    }
+}
