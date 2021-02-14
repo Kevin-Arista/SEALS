@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevin8988-coder/scla-advertise.git"
+    "url": "git+https://github.com/kevin8988-coder/SEALS.git"
   },
   "author": "Kevin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kevin8988-coder/scla-advertise/issues"
+    "url": "https://github.com/kevin8988-coder/SEALS/issues"
   },
-  "homepage": "https://github.com/kevin8988-coder/scla-advertise#readme",
+  "homepage": "https://github.com/kevin8988-coder/SEALS#readme",
   "dependencies": {
     "figlet": "^1.5.0"
   }
