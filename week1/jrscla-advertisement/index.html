@@ -1,0 +1,132 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <title>Jr. SCLA Advertisement</title>
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+
+  <body>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Contact Information</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="container">
+
+                  <form>
+                    <div class="form-group">
+                      <label for="fname1">First name:</label>
+                      <input type="name" class="form-control" id="fname1" placeholder="Enter Name">
+                      <label for="lname1">Last name:</label>
+                      <input type="name" class="form-control" id="lname1" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email1">Email address</label>
+                      <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="password1">Password</label>
+                      <input type="password" class="form-control" id="password1" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="myDisplay()">Display</button>
+                    <button type="button" class="btn btn-primary" onclick="myAlert()">Alert</button>
+                  </form>
+                  <br>
+                  <div class="revise">
+                    <h5 id="sub-title"></h5>
+                    <p id="display-fname1"></p>
+                    <p id="display-lname1"></p>
+                    <p id="display-email1"></p>
+                    <p id="display-password1"></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <p id="fig-name"></p>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+    <header id="main-img">
+        <div class="container-fluid text-center">
+          <div id="announcement-bg">
+            <h1>Junior Summer Coding Leadership Academy</h1>
+          </div>
+          <!-- The modal gets called here. -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Join Today!</button>
+        </div>
+    </header>
+
+    <br>
+
+    <section>
+      <div class="container">
+        <div class="alert alert-info">
+          <strong>Who</strong> Jr. SCLA is open to all middle school boys.
+        </div>
+        <div class="alert alert-info">
+          <strong>What</strong> Jr. SCLA is a Summer Coding Leadership Academy that expands your knowedge on coding and leadership. 
+        </div>
+        <div class="alert alert-info">
+          <strong>When</strong> Applications are limited. The dealine is February 26th, 2021. <a href="https://exploringtech.org/txt-programs/jr-scla" target="_blank">Apply Here.</a>
+        </div>
+        <div class="alert alert-info">
+          <strong> Where</strong> This program will be hosted virtually and will consider any Middle Schoolers living in near South Los Angeles
+        </div>
+        <div class="alert alert-info">
+          <strong>Why</strong> TxT's main objective is to fight against the statistics and prevent the minorities from going to jail by teachign them how to become young entrepreneurs.
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col1">
+            <h4>What is Jr.SCLA?</h4>
+            <p>SCLA is An immersive 10-week Summer experience where young men of color develop as technology leaders. Middle school students will experience first hand learning, receive mentoring and instruction to develop Leadership Skills, Computer Science Skills, Design Thinking Skills, and Entrepreneurial/Project Management Skills. This program will be very beneficial to develop your character not only to learn expand your knowledge on coding but to expand your career interest! TxT is truly benificial because it provides you the chance for you to learn coding for free! You also get to meet new people when working in teams and get to network - like what professionals do!</p>
+          </div>
+          <div class="col-md-4 col2">
+            <img src="./assets/face.JPG" width="100px" height="100px"  alt="Image of Kevin Arista">
+            <h4>Experience</h4>
+            <p>Hello my name is Kevin Arista and I was a 10th grader when I joined SCLA for the summer of 2020.  I met other young males of color and we learned the basics of coding through challenges to prepare us for our main goal - to build an application that would help our community. Can you imagine, saying that when you were in middle school you developed an app that helped your community?! As the software developer in my team, I developed the code of our app called Street Hub using MEANStack which is a set of coding languages used to develop an app. This experience taught me certain tools that professionals at Google, Snapchat, and Instagram use! I also learned and had fun working with my teammates.</p>
+          </div>
+          <div class="col-md-4 col3">
+            <h4>Knowledge</h4>
+            <p>In Conclusion, Jr.SCLA is a program for thriving young middle school kids of color. The program will be fully virtual and you will have the opportunity to borrow a laptop with all applications needed thorughout the program. The program will start on March 31st and will end on May 8th durring the 2020-2021 school year. You cannot missout on this opportunity that will realy teach you and motivate you Computer Science. Did you know that the Computer Science field is expected to grow exponetially over the years?, just look at how far the internet and video games have improved over the years. I encourage you to take this opportunity and become a leader, set an example. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="container-fluid footnotes">
+      <p class="text-center">You may be the next Bill Gates.</p>
+    </footer>
+
+
+        
+    <script src="./mains/main.js"></script>
+    <!-- Adding Bootstrap: JQuery, JS, Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
