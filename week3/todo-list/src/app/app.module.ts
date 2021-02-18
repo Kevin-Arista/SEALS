@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
@@ -14,7 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [], //inport any firewall ex: mongodb
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

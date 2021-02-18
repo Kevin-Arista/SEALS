@@ -2,23 +2,22 @@
 
 <h1>Interpolation!</h1>
 <br>
-<p>Hello my name is {{ firstName }} </p>
+<p> Hello my name is {{ firstName }}</p>
 
 <h1>One Way Data Binding and Directive!</h1>
 <br>
 <ul *ngFor="let item of todos">
-  <li> {{item}} </li>
+  <li> {{ item }}</li>
 </ul>
-<!-- <button (click)="expression"></button> -->
+<!-- <button (click)="expression"> -->
 
 
-<h1>Two-Way Binding</h1>
+<h1> Two-Way Binding</h1>
 <br>
-<input [{ngModel}] = "age">
-<p>I am {{age}} years old</p>
-<!-- Hide an image using ngIf directive -->
+<input [(ngModel)]="age">
+<p> I am {{age}} years old</p>
+<!-- Hide an image using ng-if directive-->
 <div *ngIf="imageShows">
-  <img src="../assets/initial.png" width="300px" height="350px">
-  <button (click)="displayImage()">Show Image</button>
+  <img src="../assets/gir2.png" width="300px" height="350px">
 </div>
-
+<button (click)="displayImage()">Show image</button>
