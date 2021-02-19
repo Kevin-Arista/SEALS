@@ -13,10 +13,6 @@ body{
     display: inline;
     font-size: 70px; 
 }
-.collapse .nav-item{
-    position: right;
-    color: white;    
-}
 
 .showcase{
     height: 500px;
@@ -62,6 +58,11 @@ body{
     background-color: #d83f87;
     padding: 40px;
     border-radius: 30%;
+}
+
+.mail-list-box .btn-submit{
+    background-color: #44318D;
+    color: white;
 }
 
 .follow-us-box{

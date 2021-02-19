@@ -1,3 +1,4 @@
+import { FormStyle, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { element } from 'protractor';
 
@@ -10,11 +11,22 @@ export class AppComponent {
   // Store data using this array
   public todos = [''];
   // How will you take the input
-   todo = ''
+   input = ''
   // Add functions as you fit!
-  displayText(){
-     this.todos.push(this.todo);
+  recordText(){
+    // How do add data to an array in js? hint: search .push()
+     this.todos.push(this.input);
   }
-  // How do add data to an array in js? hint: search .push()
- 
+
+  // This will reset to empty the input box
+  deleteInput(){
+    this.input = ''
+  }
+
+  keyDown13(event) {
+    if (event.keyCode === 13) {
+      this.todos.push(this.input);
+      this.input = ''
+    }
+  }
 }
