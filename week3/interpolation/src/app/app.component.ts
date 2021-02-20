@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sample-app';
+  title = 'interpolaion';
   firstName = 'Kevin';
   lastName = 'Arista';
   // What do we need from the user?

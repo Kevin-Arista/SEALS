@@ -1,0 +1,177 @@
+<body>
+    <header>
+      <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#"><p>Evy</p> Fashion</a>
+        <div class="justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact">Contact</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+    </header>
+  
+    <section>
+      <div class="container-fluid showcase">
+        <div class="title-float">
+          <div class="showcase-heading">
+            <h1>Welcome</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <br><br>
+  <!-- This row will divide the two main columns -->
+    <div class="row">
+      <div class="col-lg-9">
+        <!-- About Us -->
+        <aside>
+          <article>
+            <div class="container about-us">
+              <h1>About Us</h1>
+              <p>Evy Fashion has been serving the community of Southern Los  Angeles for over 15 years. We have dedicate all our days to satisfy females of all ages! We provide clothing styles for all occasions and all sizes. Customer satisfaction is our priority therefore making us flexible with merchendise exchange. We always try to include fashion of all sorts of styles. We are willing to take orders to for all local cleints. </p>
+            </div>
+          </article>
+  
+          <br><br>
+  
+          <!-- g -->
+          <article>
+            <div class="container map-view">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="https://elfaroplaza.com/" target="_blank"><img src="../assets/logo-el-faro-plaza.png" height="150px" width="100%"></a>
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.google.com/maps/place/El+Faro+Plaza/@34.0037194,-118.2430554,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8edc43489d7:0x498e7b63c4ecc5bd!8m2!3d34.003715!4d-118.2408667" target="_blank"><img src="../assets/el-faro-map-img.png" height="150px" width="100%"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <br><br>
+  
+          <article>
+            <div class="container our-location">
+              <h1>Our Location</h1>
+              <p>Located in El Faro Plaza, in the corner of Alameda and Vernon. On our grid map, we are located on Building B Secrion 19 (B19). Evy Fashion is located near the the folowing locations: Tere's Heirbas, Betty's Candy Shop, Tonitas Botanica, Carolina's Shoes, Belica's Auto Parts, and Gary Fix-It. This small but mighty store  will not rest until we satisfy our customers. </p>
+            </div>
+          </article>
+  
+          <br><br>
+  
+          <article>
+            <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="img-thumbnail">
+                  <a href="../assets/baby-girl-red.JPG" target="_blank">
+                    <img src="../assets/baby-girl-red.JPG" alt="baby-girl-red">
+                  </a>
+                  <div class="caption">
+                    <p>Size: S, M, L</p>
+                    <p>Material: Cotton</p>
+                    <p>Design: 5 variants</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="img-thumbnail">
+                  <a href="./assets/love-khaki.JPG" target="_blank">
+                    <img src="./assets/love-khaki.JPG" alt="love-khaki">
+                  </a>
+                  <div class="caption">
+                    <p>Size: S, M, L</p>
+                    <p>Material: Cotton</p>
+                    <p>Design: 5 variants</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3">
+                <div class="img-thumbnail">
+                  <a href="./assets/lovely-lavender.JPG" target="_blank">
+                    <img src="./assets/lovely-lavender.JPG" alt="lovely-lavender">
+                  </a>
+                  <div class="caption">
+                    <p>Size: S, M, L</p>
+                    <p>Material: Cotton</p>
+                    <p>Design: 5 variants</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </article>
+          <article>
+            <div class="container our-location">
+              <h1>New Arrivals</h1>
+              <p>Every Tuesdays we import new Merchendise. Our top priority is your top fashion. We serve anything, from shorts to jeans to shirts to coats. We include a full slection to pleasure our cleints' styles of fashion. </p>
+            </div>
+          </article>
+        </aside>
+      </div>
+  
+      <br><br>
+  
+      <div class="col-lg-3">
+        <aside>
+          <article>
+            <div class="container mail-list-box">
+              <h1>Mailing List</h1>
+              <p>Stay up to date with the latest fashion. Join our mailing list and you'll receive messages of our most recent imports. Keep Calm and Love the Fashion!</p>
+              <input [(ngModel)] = "email" type="email" name="email" placeholder="sample@email.com">
+              <button class="btn-submit" type="button" (click)= "alertSub()">Subscribe</button>
+              <p>Is this correct? {{email}} </p>
+            </div>
+          </article>
+          <br><br>
+          <article>
+            <div class="container scheduale">
+              <h1>Hours</h1>
+              <p>Evy Fashion is Open 6 days a week!</p>
+              <ul>
+                <li>Monday 9 AM - 7 PM</li>
+                <li>Tuesday CLOSED</li>
+                <li>Wednesday 9 AM - 7 PM</li>
+                <li>Thursday 9 AM - 7 PM</li>
+                <li>Friday 9 AM - 7 PM</li>
+                <li>Saturday 9 AM - 7 PM</li>
+                <li>Sunday 9 AM - 7 PM</li>
+              </ul>
+            </div>
+          </article>
+          <br><br>
+          <article>
+            <div class="container map-star">
+              <h1>Map</h1>
+              <p>Where We Are</p>
+              <img src="./assets/el-faro-b19-map.png" width="100%">
+            </div>
+          </article>
+        </aside> 
+      </div>
+    </div>
+  
+    <br><br>
+  
+    <aside>
+      <div class="media-list">
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com/" target="_blank" class="fa fa-snapchat-ghost"></a>
+      </div>
+    </aside>
+    <footer>
+      <div class="container-fluid footer-bottom">
+        <p>Sample &copy; Evy Fashion</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
