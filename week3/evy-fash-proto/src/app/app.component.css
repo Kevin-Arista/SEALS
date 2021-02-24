@@ -2,6 +2,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #44318D;
     color: white;
+    margin: none;
     width: 100%;
 }
 

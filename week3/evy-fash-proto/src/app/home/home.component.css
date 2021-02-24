@@ -3,6 +3,8 @@ body{
     background-color: #44318D;
     color: white;
     width: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 body p {
@@ -41,9 +43,7 @@ body p {
     font-size: 100px;
 }
 
-
 .col-md-3{
-    
     padding: 20px;
 }
 
@@ -75,6 +75,7 @@ body p {
     background-color: #d83f87;
     padding: 60px;
     border-radius: 30%;
+    border: 20px;
 }
 
 .scheduale ul li{
