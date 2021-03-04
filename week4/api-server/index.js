@@ -24,59 +24,38 @@ app.get('/', (req, res) => {
     // instead of a simple string you could also use objects instead
     res.status(200).send({
         status: 200,
-        message: 'Express server is ok'
+        message: 'This is a sample server, with a random Cat API'
     });
 });
 // Endpoint for API movies
-app.get('/get-movies', (req, res) => {
-    const url = `${baseUrl}/films`;
+app.get('/char-list', (req, res) => {
+    const url = `${baseUrl}/character`;
     superagent.get(url).end((error, resp) =>{
         // Inside here we tell superagent what to do with the request
         if (error){
             res.status(400).send({
                 status: 400,
-                message: 'Unable to get movies.'
+                message: 'Unable to get character list from Rick and Morty'
+            });
+        }
+        res.status(200).send(resp.body);
+    });
+});
+app.post('/get-one-char', (req, res) => {
+    const incomingData = req.id;
+    const url = `${baseUrl}/character/${incomingData.id}`;
+    superagent.get(url).end((error, resp) =>{
+        // Inside here we tell superagent what to do with the request
+        if (error){
+            res.status(400).send({
+                status: 400,
+                message: 'Unable to get specific character'
             });
         }
         res.status(200).send(resp.body);
     });
 });
 
-app.post('/get-one-movie', (req, res) => {
-    const incomingData = req.body;
-    const url = `${baseUrl}/films/${incomingData.id}`;
-    superagent.get(url).end((error, resp) =>{
-        // Inside here we tell superagent what to do with the request
-        if (error){
-            res.status(400).send({
-                status: 400,
-                message: 'Movie not found with that Id.'
-            });
-        }
-        res.status(200).send(resp.body);
-    });
-});
-
-app.post('/get-one-movie-title', (req, res) => {
-    const incomingData = req.body;
-    const url = `${baseUrl}/films/${incomingData.id}`;
-    superagent.get(url).end((error, resp) =>{
-        // Inside here we tell superagent what to do with the request
-        if (error){
-            res.status(400).send({
-                status: 400,
-                message: 'Movie not found with that Title.'
-            });
-        }
-        res.status(200).send(resp.body);
-    });
-});
-
-// get all movies
-// llop thru movielist till we find an object(movie)
-// make it loop till we have the same title
-// if same title, get the id of the one that matches
-// then use into
 
 
 

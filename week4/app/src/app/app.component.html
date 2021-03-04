@@ -1,0 +1,36 @@
+<body>
+    <header>
+        <h1>Studio Ghibli</h1>
+        <p>The largest Anime Film Library!</p>
+    </header>
+
+    <section>
+        <!-- Post Request -->
+        <form [formGroup]="inputGroup" (ngSubmit)="onFormSubmit()">
+            <label for="input"> Movie </label>
+            <input type="text" placeholder="Id Of Movie" formControlName="id">
+            <button type="submit"> Post </button>
+        </form>
+
+        <!-- Post Request by Title -->
+        <form [formGroup]="inputGroup2" (ngSubmit)="onFormSubmit2()">
+            <label for="input"> Movie </label>
+            <input type="text" placeholder="Title Of Movie" formControlName="title">
+            <button type="submit"> Post </button>
+        </form>
+    </section>
+
+    <section>
+        <ul *ngFor="let movie of movieList"> 
+            <li>
+                <div>
+                    <p>{{ movie.title }}</p>
+                    <p>Directed By:{{ movie.director }}</p>
+                    <p>Produced By: {{ movie.producer }}</p>
+                    <p>{{ movie.description }}</p>
+                    <p>Rental ID: {{ movie.id }}</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>

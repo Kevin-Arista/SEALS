@@ -1,0 +1,26 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    h1{
+    color: rgb(0, 173, 173);
+    }
+
+    p{
+        color: peru;
+    }
+}
+
+ul {
+    border: 5px solid black;
+    padding: 50px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(218, 218, 218);
+    overflow: hidden;
+    list-style-type: none;
+}
