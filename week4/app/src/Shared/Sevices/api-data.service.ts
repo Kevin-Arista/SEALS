@@ -22,6 +22,7 @@ export class ApiDataService {
   // how can we transfer this data(list of movies) without any insecurities?
   //  we create an observable, which is a list of refernce of the data
   // we are creating an obserable containing the BehaviorSubject with a property 'asObservable' to cast/view it as a observable
+  // an observable is anuthing in our database that we will reference wo be able to use in our angular app
   public listOfMoviesObs = this.listOfMovies.asObservable();
 
   constructor(

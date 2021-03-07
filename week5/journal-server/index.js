@@ -20,6 +20,7 @@ server.use(express.json());
 // gonna help u parse the data that is longer that a certain limit of megabytes
 server.use(express.urlencoded({ extended: true }));
 
+mongoose.set('useNewUrlParser', true);
 // Connecting to MongoDB
 // new... help us
 // unified... help us use our schemas
@@ -39,13 +40,10 @@ server.get('/', (req, res) => {
     // Status codes: 404, 500, 200
     res.status(200).send({
         status: 200,
-        message: 'Express server that is linked to MongoDB is OK.'
+        message: 'Express server that is linked to MongoDB is OK.',
     });
 });
-
-server.get('/', () => {
-    console.log('server ok');
-})
+console.log('server ok')
 
 // create a journal entry
 // we will do this by creating an endpoint for it
@@ -65,6 +63,65 @@ server.post('/add-journal', (req, res) => {
             message: 'Journal Created.',
             document: doc
         })
+    })
+});
+
+server.get('/get-all-journals', (req, res) => {
+    Journal.find({}, (err, journals) =>{
+        if(err) {
+            res.status(500).send({
+                status: 500,
+                msg: 'No Journals.'
+            });
+        }
+        res.status(200).send({
+            status: 200,
+            msg: 'These are all the journals',
+            document: journals
+        })
+    })
+    
+});
+
+// Insert many Journal Entries
+// It is for your benefit if you ever need to have test data on your mongoDB
+server.post('/add-many-journals', (req, res) => {
+    // after making the request in postman, you will call data in body 
+    const incomingData = req.body.journals;
+    //c calling journal model with insertMany property
+    Journal.insertMany( incomingData, (err, doc) =>{
+        if(err) {
+            res.status(500).send({
+                status:500,
+                msg: 'Could not add journals.'
+            });
+        }
+
+        res.status(200).send({
+            status:200,
+            msg: 'Successfully created multiple journals at once!',
+            document: doc
+        });
+    }); 
+});
+
+// Remove journal entry
+server.post('/remove-journal', (req, res) => {
+    Journal.findOne({}, (err, doc) => {
+
+    })
+});
+
+// Remove by Id
+server.post('/remove-by-id', (req, res) => {
+    Journal.findByIdAndRemove({}, (err, doc) => {
+
+    })
+});
+
+server.post('/update-journal', (req, res) => {
+    Journal.findByIdAndUpdate({}, () => {
+
     })
 });
 
