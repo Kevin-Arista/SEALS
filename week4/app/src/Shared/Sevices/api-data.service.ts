@@ -16,6 +16,12 @@ const baseUrl = 'http://localhost:8080';
 // in this case we will use it inside the app.component.ts
 export class ApiDataService {
 
+  constructor(
+    // we use/call the imported HttpClient here
+    // we create an instance of HttpClient; which means to create a class for a bigger class
+    public http: HttpClient
+  ) { }
+
   // BehaviorSubject creates a reference to all data (movies) we have
   // we are creating a new insatnce(listOfMovies) of BehaviorSubect of type: [] or list/array
   private listOfMovies = new BehaviorSubject([]);
@@ -25,11 +31,6 @@ export class ApiDataService {
   // an observable is anuthing in our database that we will reference wo be able to use in our angular app
   public listOfMoviesObs = this.listOfMovies.asObservable();
 
-  constructor(
-    // we use/call the imported HttpClient here
-    // we create an instance of HttpClient; which means to create a class for a bigger class
-    public http: HttpClient
-  ) { }
 
   // this fxn just makes  arequest to our express server (runing on port 8080)
   // the express server is what makes a request to the actual Ghibli API (remember: our express server was "importing" a premade API)

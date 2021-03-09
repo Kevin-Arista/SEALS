@@ -1,0 +1,21 @@
+<body>
+    <div id="content">
+      <!-- Post Request -->
+      <form [formGroup] = "deleteForm" (ngSubmit)="removeSpecifiedJournal()">
+          <header>
+            <h1> Delete Journal</h1>
+          </header>
+          <div>
+            <hr>
+            <section class="line">
+              <label for="input"> By Title </label>
+              <hr>
+              <input class="form-control" type="text" placeholder="Title of Journal" formControlName = "title">
+            </section>
+            <hr>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-danger"> Delete </button>
+      </form>
+    </div>
+  </body>

@@ -1,0 +1,36 @@
+body{
+    color: black;
+}
+header{
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+#content{
+    background-color: rgb(115, 243, 205);
+    border-radius: 10%;
+    width: 90%;
+    height: auto;
+    padding: 100px;
+    margin: 50px;
+}
+li{
+    list-style-type: none;
+    #title-stamp{
+        background-color: rgb(219, 246, 146);
+    }
+    #author-stamp{
+        font-size: large;
+    }
+    #time-stamp{
+        text-align: right;
+        font-size: large;
+    }
+    #id-stamp{
+        text-align: right;
+        font-size: large;
+    }
+}
+

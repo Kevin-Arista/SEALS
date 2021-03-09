@@ -1,1 +1,20 @@
-<p>journal-history works!</p>
+<body>
+    <header>
+        <h1>| My Journals |</h1>
+    </header>
+    <section>
+        <ul *ngFor="let journal of journalList.slice().reverse()"> 
+            <li>
+                <div id="content">
+                    <p id="title-stamp">{{ journal.title | uppercase }} </p>
+                    <p id="author-stamp">Written By: {{ journal.author }}</p>
+                    <hr>
+                    <p id="content-stamp">{{ journal.content }}</p>
+                    <hr>
+                    <p id="time-stamp">Last Updated On: {{ journal.updatedAt }} | v:{{ journal.__v }}</p>
+                    <p id="id-stamp">ID {{ journal._id }}</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>

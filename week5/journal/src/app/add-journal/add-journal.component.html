@@ -1,34 +1,33 @@
 <body>
     <div id="content">
       <!-- Post Request -->
-      <form>
+      <form [formGroup] = "createForm" (ngSubmit)="journalSubmit()">
           <header>
-            <h1>Dear Diary</h1>
+            <h1> New Journal</h1>
           </header>
           <div>
             <hr>
             <section class="line">
-              <label for="input"> Heading </label>
+              <label for="input"> Title </label>
               <hr>
-              <input class="form-control" type="text" placeholder="Title">
+              <input class="form-control" type="text" placeholder="Title" formControlName = "title">
             </section>
             <hr>
             <section class="line">
-              <label for="input"> By </label>
+              <label for="input"> Author </label>
               <hr>
-              <input class="form-control" type="text" placeholder="Author">
+              <input class="form-control" type="text" placeholder="Author" formControlName = "author">
             </section>
             <hr>
             <section class="line">
               <label for="input"> Content </label>
               <hr>
-              <textarea class="form-control"></textarea>
+              <textarea class="form-control" formControlName = "content"></textarea>
             </section>
             <hr>
           </div>
           <br>
-          <button type="submit"> Post </button>
+          <button type="submit" class="btn btn-primary"> Add </button>
       </form>
     </div>
-      
   </body>
